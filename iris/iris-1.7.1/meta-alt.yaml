@@ -1,0 +1,29 @@
+about: {home: 'http://scitools.org.uk/iris/', license: LGPL, summary: 'A powerful,
+    easy to use, and community-driven Python library for analysing and visualising
+    meteorological and oceanographic data sets.'}
+build:
+  entry_points: []
+  features: []
+  number: 0
+  string: ''
+  track_features: []
+package: {name: iris, version: 1.7.1}
+requirements:
+  build: [python, numpy, biggus, cartopy, libmo_unpack, netcdf4, pyke, scipy, setuptools,
+    udunits 2*]
+  conflicts: []
+  run: [python, numpy, biggus 0.6*, cartopy, cfchecker, ecmwf_grib 1.9.16, libmo_unpack,
+    mock, netcdf4, nose, pep8, pyke, udunits 2*]
+source:
+  fn: COMBO.zip
+  git_branch: ''
+  git_tag: ''
+  md5: ''
+  patches: []
+  svn_rev: ''
+  url: https://github.com/rhattersley/iris/archive/COMBO.zip
+test:
+  commands: []
+  files: []
+  imports: [iris]
+  requires: [requests]

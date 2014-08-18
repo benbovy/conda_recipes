@@ -1,0 +1,26 @@
+about: {home: 'https://puma.nerc.ac.uk/trac/UM_TOOLS/wiki/unpack', summary: Met Office
+    PP-Unpacking Code}
+build:
+  entry_points: []
+  features: []
+  string: ''
+  track_features: []
+package: {name: libmo_unpack, version: '030712'}
+requirements:
+  build: []
+  conflicts: []
+  run: []
+source:
+  fn: unpack-030712.tgz
+  git_branch: ''
+  git_tag: ''
+  md5: ''
+  patches: []
+  sha1: cce96978d8e06ebbee50989d7c934f7569a241dd
+  svn_rev: ''
+  url: https://puma.nerc.ac.uk/trac/UM_TOOLS/raw-attachment/wiki/unpack/unpack-030712.tgz
+test:
+  commands: []
+  files: []
+  imports: []
+  requires: []

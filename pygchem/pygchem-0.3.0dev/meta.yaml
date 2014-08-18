@@ -1,0 +1,38 @@
+package:
+  name: pygchem
+  version: !!str 0.3.0dev
+
+source:
+  git_url: https://github.com/benbovy/PyGChem
+  #git_tag: v0.3.0dev
+
+requirements:
+  build:
+    - python
+    - numpy
+    - iris
+    - dateutil
+    - ipython 2*
+    - ipython-notebook 2*
+    - setuptools
+
+  run:
+    - python
+    - numpy
+    - iris
+    - dateutil
+    - ipython 2*
+    - ipython-notebook 2*
+
+build:
+    script: python setup.py install
+
+test:
+  imports:
+    - pygchem
+    - pygchem.datafields
+
+about:
+  home: https://github.com/benbovy/PyGChem
+  license: GPL License v3
+  summary: 'A Python interface to the GEOS-Chem Model'
